@@ -27,7 +27,7 @@
 	"5"
 	{
 		"label" "#GameUI_GameMenu_FindServers"
-		"command" "engine r_cleardecals; snd_async_flush; gamemenucommand OpenServerBrowser" // Attempted mitigation to "CAudioSourceMemWave::GetDataPointer failed" crash when hot-joining another server
+		"command" "engine snd_async_flush; gamemenucommand OpenServerBrowser" // Attempted mitigation to "CAudioSourceMemWave::GetDataPointer failed" crash when hot-joining another server
 	}
 	"6"
 	{
